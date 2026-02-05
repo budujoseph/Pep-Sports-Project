@@ -1,8 +1,8 @@
 {
   "name": "pep-sports-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "WDD 330 end o course project",
+  "main": "main.js",
   "scripts": {
     "dev": "vite",
     "start": "vite",

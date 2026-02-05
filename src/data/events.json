@@ -1,0 +1,66 @@
+{
+    "events": [
+        {
+            "name": "Annual Charity Sports Gala",
+            "description": "A grand evening celebrating sports achievements and raising funds for young athletes. The event features keynote speeches from renowned sports personalities, award ceremonies, and fundraising auctions for sports development programs.",
+            "image": "./images/annual-sports-gala.webp"
+        },
+        {
+            "name": "Youth Sports Development Camp",
+            "description": "A week-long training camp for young athletes, offering specialized coaching in various sports. The camp includes skill-building exercises, mentorship sessions, and fitness assessments to prepare participants for competitive sports.",
+            "image": "./images/sports-development.webp"
+        },
+        {
+            "name": "Community Fun Run & Wellness Fair",
+            "description": "A fun-filled 5K run promoting health and wellness within the community. Participants of all ages can join the run, followed by a wellness fair offering free health check-ups, fitness workshops, and nutritional guidance.",
+            "image": "./images/community-run.webp"
+        },
+        {
+            "name": "Sports Science Symposium",
+            "description": "An educational event bringing together sports scientists, coaches, and athletes to discuss the latest research and innovations in sports science. The symposium includes keynote presentations, panel discussions, and interactive workshops.",
+            "image": "./images/sports-science.webp"
+        },
+        {
+            "name": "International Sports Festival",
+            "description": "A vibrant celebration of global sports culture, featuring international teams competing in various sports. The festival includes cultural performances, food stalls, and opportunities for fans to meet their favorite athletes.",
+            "image": "./images/sports-festival.webp"
+        },
+        {
+            "name": "Adaptive Sports Showcase",
+            "description": "An inspiring event highlighting the achievements of athletes with disabilities. The showcase features adaptive sports competitions, motivational talks, and interactive sessions to promote inclusivity in sports.",
+            "image": "./images/adaptive-sports.webp"
+        },
+        {
+            "name": "Sports Technology Expo",
+            "description": "An exhibition showcasing the latest advancements in sports technology, including wearable devices, performance analytics, and virtual reality training tools. The expo offers hands-on demonstrations and expert insights into the future of sports tech.",
+            "image": "./images/sports-tech.webp"
+        },
+        {
+            "name": "Sports Leadership Conference",
+            "description": "A conference dedicated to developing leadership skills in sports professionals. The event features workshops on team management, communication strategies, and career development for coaches, athletes, and sports administrators.",
+            "image": "./images/sports-leadership.webp"
+        },
+        {
+            "name": "Sports Film Festival",
+            "description": "A cinematic celebration of sports stories, featuring screenings of documentaries, biopics, and inspirational sports films. The festival includes Q&A sessions with filmmakers and athletes, as well as panel discussions on the impact of sports in media.",
+            "image": "./images/sports-film-festival.webp"
+        },
+        {
+            "name": "Sports Nutrition Workshop",
+            "description": "A workshop focused on the importance of nutrition for athletes, covering topics such as meal planning, hydration strategies, and supplements. The workshop includes cooking demonstrations and personalized nutrition consultations.",
+            "image": "./images/sports-nutrition.webp"
+        },
+        {
+            "name": "Sports Injury Prevention Seminar",
+            "description": "An educational seminar aimed at preventing sports-related injuries through proper training techniques, warm-up routines, and recovery strategies. The seminar features expert speakers and practical demonstrations.",
+            "image": "./images/sports-injury.webp"
+        },
+        {
+            "name": "Sports Psychology Workshop",
+            "description": "A workshop designed to enhance mental resilience and performance in athletes. The session covers techniques for managing stress, improving focus, and building confidence in competitive sports.",
+            "image": "./images/sports-psychology.webp"
+        }
+
+
+    ]
+}

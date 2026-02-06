@@ -1,4 +1,4 @@
-import { initNavigation, FetchEvents } from "./events.mjs";
+import { initNavigation, FetchEvents } from "./Events.mjs";
 
 initNavigation();
 FetchEvents();

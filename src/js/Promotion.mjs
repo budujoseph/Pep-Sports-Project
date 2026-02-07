@@ -23,6 +23,14 @@ export class NewsLetter {
 
         this.subForm.style.display = "none";
         this.subMsg.style.display = "block";
+
+        this.subMsg.classList.add("showup")
+
+        setTimeout(() => {
+            this.subMsg.classList.remove("showup");
+            this.subMsg.style.display = "none";
+        }, 3000);
+
     }
 
         

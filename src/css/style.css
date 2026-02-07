@@ -289,6 +289,32 @@ footer {
   text-align: center;
 }
 
+#sub-msg {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translate(20px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  pointer-events: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  z-index: 1000;
+}
+
+#sub-msg.showup {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 @media screen and (min-width: 44rem) {
   nav {
     width: 100%;

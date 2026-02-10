@@ -6,7 +6,7 @@
     <title>Pep Sports Limited || Home</title>
     <meta name="description" content="WDD330 Project - Pep Sports" />
     <meta name="author" content="Joseph Budu Joseph" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,12 +46,12 @@
     <meta name="twitter:site" content="@PepSports" />
     <meta name="twitter:creator" content="@morgan_qwesi" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="/src/js/main.js" type="module" defer></script>
   </head>
   <body>
     <header>
-      <img src="images/real-logo.svg" alt="Pep Sports Logo" />
+      <img src="/images/real-logo.svg" alt="Pep Sports Logo" />
       <button id="trygram" aria-label="hamburger-button"></button>
     </header>
     <nav id="nav-animation">
@@ -65,8 +65,8 @@
       <div class="hero-items">
         <h1>Investing in Youth,<br /><span>Creating Champions</span></h1>
         <picture class="hero-img">
-          <source srcset="images/newhero.webp" media="(min-width: 704px)" />
-          <img src="images/mobilehero.webp" alt="new-hero-large" />
+          <source srcset="/images/newhero.webp" media="(min-width: 704px)" />
+          <img src="/images/mobilehero.webp" alt="new-hero-large" />
         </picture>
       </div>
 
@@ -75,7 +75,7 @@
         <div class="events-container"></div>
       </section>
       <section class="sub-sec">
-        <form class="sub-form" onsubmit="saveSubEmail(event)">
+        <form class="sub-form" id="subscribeForm">
           <h3>Subscribe for updates:</h3>
           <label
             ><span>Email:*</span
@@ -91,26 +91,69 @@
         </form>
         <p id="sub-msg">Thank You for Subscribing!</p>
       </section>
+
+      <!-- Login Dialog -->
       <dialog id="loginDialog" class="login-dialo">
         <button class="close-Login" id="closeLoginBtn">X</button>
 
         <h2>Welcome Back</h2>
         <p>Please enter your details</p>
 
-        <form>
+        <form id="loginForm">
           <input
             type="email"
             placeholder="Email address"
             autocomplete="email"
             required
+            id="loginEmail"
           />
-          <input type="password" placeholder="Enter password" />
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="loginPassword"
+          />
           <button type="submit" class="login-btn">Login</button>
         </form>
 
         <p class="switch-text">
-          Don't have an account?
-          <a href="Authentications/register.html">Register</a>
+          Don't have an account? <a href="#" id="openRegister">Register</a>
+        </p>
+      </dialog>
+
+      <!-- register dialog -->
+      <dialog id="registerDialog" class="login-dialog">
+        <button class="close-btn" id="closeRegisterBtn">✕</button>
+
+        <h2>Create account</h2>
+        <p>Register to continue</p>
+
+        <form id="registerForm">
+          <input
+            type="text"
+            id="registerFullName"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            id="registerEmail"
+            placeholder="Email address"
+            required
+          />
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" id="registerSubmitBtn" class="register-btn">
+            Register
+          </button>
+        </form>
+
+        <p class="switch-text">
+          Already have an account?
+          <a href="/index.html" id="openLogin">Sign in</a>
         </p>
       </dialog>
     </main>
@@ -129,7 +172,7 @@
         <h3>Connect With us</h3>
         <a href="https://www.facebook.com" target="_blank">
           <img
-            src="images/fb-logo.svg"
+            src="/images/fb-logo.svg"
             alt="facebook logo"
             width="40"
             height="40"
@@ -140,7 +183,7 @@
           target="_blank"
         >
           <img
-            src="images/linkedin.svg"
+            src="/images/linkedin.svg"
             alt="LinkedIn Logo"
             width="40"
             height="40"
@@ -151,7 +194,7 @@
           target="_blank"
         >
           <img
-            src="images/whatsapp-logo.svg"
+            src="/images/whatsapp-logo.svg"
             alt="Whatsapp Logo"
             width="40"
             height="40"

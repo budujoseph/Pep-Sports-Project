@@ -1,10 +1,10 @@
 
 export function initNavigation() {
     const hamburger = document.getElementById("trygram");
-    const menuLinks = document.querySelector("nav-animation");
+    const menuLinks = document.querySelector("#nav-animation");
 
     hamburger.addEventListener("click", () => { 
-        console.log("Hamburger menu clicked");
+        // console.log("Hamburger menu clicked");
         menuLinks.classList.toggle("show");
         hamburger.classList.toggle("show");
     });
@@ -14,33 +14,35 @@ export function initNavigation() {
 
     navLinks.forEach(link => {
         if (link.href.includes(`${activePage}`)) {
-            console.log("Active page:", activePage);
+            // console.log("Active page:", activePage);
             link.classList.add("active");
         }
     });
 }
 
-const eventsPath = "./data/events.json";
+
 
 export async function FetchEvents() {
     
-const eventContainer = document.querySelector(".events-container");
-    try {
-        const res = await fetch(eventsPath);
-        if (res.ok) {
-            const data = await res.json();
-            console.log(data);
 
-            const threeEvent = data.events
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 3);
+    const eventsPath = "/data/events.json";
+    const eventContainer = document.querySelector(".events-container");
+        try {
+            const res = await fetch(eventsPath);
+            if (res.ok) {
+                const data = await res.json();
+                // console.log(data);
+
+                const threeEvent = data.events
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3);
             
-            displayEvents(threeEvent, eventContainer);
+                displayEvents(threeEvent, eventContainer);
             
-        } 
-    } catch (error) {
-        throw new Error(`FetchEvents Error: ${error.message}`);
-    }
+            } 
+        } catch (error) {
+            throw new Error(`FetchEvents Error: ${error.message}`);
+        }
 }
 
 function displayEvents(events, container) {

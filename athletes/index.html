@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pep Sports Limited || Home</title>
+    <title>Pep Sports Limited || Athletes</title>
     <meta name="description" content="WDD330 Project - Pep Sports" />
     <meta name="author" content="Joseph Budu Joseph" />
     <link rel="icon" href="/favicon.ico" />
@@ -46,9 +46,10 @@
     <meta name="twitter:site" content="@PepSports" />
     <meta name="twitter:creator" content="@morgan_qwesi" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script src="/src/js/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="/src/js/athletes.js" type="module" defer></script>
   </head>
+
   <body>
     <header>
       <img src="/images/real-logo.svg" alt="Pep Sports Logo" />
@@ -56,106 +57,27 @@
     </header>
     <nav id="nav-animation">
       <ul class="menu-navs">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="/athletes/index.html">Athletes</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
     <main>
-      <div class="hero-items">
-        <h1>Investing in Youth,<br /><span>Creating Champions</span></h1>
-        <picture class="hero-img">
-          <source srcset="/images/newhero.webp" media="(min-width: 704px)" />
-          <img src="/images/mobilehero.webp" alt="new-hero-large" />
-        </picture>
-      </div>
-
-      <section class="events-sec">
-        <h2>Events</h2>
-        <div class="events-container"></div>
+      <section class="cta-sec">
+        <h2>Get In Touch With Us!</h2>
+        <p>Join us in empowering athletes worldwide!</p>
+        <a href="contact.html">Contact Us</a>
       </section>
-      <section class="sub-sec">
-        <form class="sub-form" id="subscribeForm">
-          <h3>Subscribe for updates:</h3>
-          <label
-            ><span>Email:*</span
-            ><input
-              type="email"
-              name="email"
-              autocomplete="email"
-              placeholder="example@gmail.com"
-              id="sub-email"
-              required
-          /></label>
-          <button type="submit" class="sub-btn">Subscribe</button>
-        </form>
-        <p id="sub-msg">Thank You for Subscribing!</p>
+      <section class="athletes-page">
+        <h2>Meet Our Athletes</h2>
+        <div class="sportbtn">
+          <button class="allAthletes">All</button>
+          <button class="fball-btn">Football</button>
+          <button class="bball-btn">Basketball</button>
+          <button class="vball-btn">Volleyball</button>
+        </div>
+        <div id="athletes-container"></div>
       </section>
-
-      <!-- Login Dialog -->
-      <dialog id="loginDialog" class="login-dialo">
-        <button class="close-Login" id="closeLoginBtn">X</button>
-
-        <h2>Welcome Back</h2>
-        <p>Please enter your details</p>
-
-        <form id="loginForm">
-          <input
-            type="email"
-            placeholder="Email address"
-            autocomplete="email"
-            required
-            id="loginEmail"
-          />
-          <input
-            type="password"
-            placeholder="Enter password"
-            id="loginPassword"
-          />
-          <button type="submit" class="login-btn">Login</button>
-        </form>
-
-        <p class="switch-text">
-          Don't have an account? <a href="#" id="openRegister">Register</a>
-        </p>
-      </dialog>
-
-      <!-- register dialog -->
-      <dialog id="registerDialog" class="login-dialog">
-        <button class="close-btn" id="closeRegisterBtn">✕</button>
-
-        <h2>Create account</h2>
-        <p>Register to continue</p>
-
-        <form id="registerForm">
-          <input
-            type="text"
-            id="registerFullName"
-            placeholder="Full Name"
-            required
-          />
-          <input
-            type="email"
-            id="registerEmail"
-            placeholder="Email address"
-            required
-          />
-          <input
-            type="password"
-            id="registerPassword"
-            placeholder="Password"
-            required
-          />
-          <button type="submit" id="registerSubmitBtn" class="register-btn">
-            Register
-          </button>
-        </form>
-
-        <p class="switch-text">
-          Already have an account?
-          <a href="/index.html" id="openLogin">Sign in</a>
-        </p>
-      </dialog>
     </main>
 
     <footer>

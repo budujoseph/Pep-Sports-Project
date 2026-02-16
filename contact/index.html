@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pep Sports Limited || Home</title>
+    <meta name="description" content="WDD330 Project - Pep Sports" />
+    <meta name="author" content="Joseph Budu Joseph" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap"
+        rel="stylesheet" />
+    <meta property="og:title" content="Pep Sports Limited" />
+    <meta property="og:description" content="Exploring the Benefits of Organized Sports" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://budujoseph.github.io/wdd231/project/images/media-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://budujoseph.github.io/wdd231/project/index.html" />
+    <meta name="twitter:title" content="Pep Sports Limited" />
+    <meta name="twitter:description" content="Exploring the Benefits of Organized Sports" />
+    <meta name="twitter:type" content="website" />
+    <meta name="twitter:image" content="https://budujoseph.github.io/wdd231/project/images/media-image.webp" />
+    <meta name="twitter:url" content="https://budujoseph.github.io/wdd231/project/index.html" />
+    <meta name="twitter:site" content="@PepSports" />
+    <meta name="twitter:creator" content="@morgan_qwesi" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="/images/real-logo.svg" alt="Pep Sports Logo" />
+        <button id="trygram" aria-label="hamburger-button"></button>
+    </header>
+    <nav id="nav-animation">
+        <ul class="menu-navs">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/athletes/index.html">Athletes</a></li>
+            <li><a href="/contact/index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="contact-form">
+        <section class="cont-invite">
+            <h2>Contact Us</h2>
+            <p>
+                We welcome your supports! Contact us to learn more about Pep Sports Foundation, our initiatives,
+                registrations and how you can help!
+            </p>
+            <p class="contact-mail">info@pepsports.org</p>
+            <address>
+                Asamankese, Suhum Road<br>
+                Sukuntu, Asamankese<br>
+                (233) 555 595 354<br>
+            </address>
+            <hr>
+            <article class="history-article">
+                <h2>The History of PEP Sports Foundation</h2>
+                <p>
+                    The PEP Sports Foundation, known today as a global leader in athletic development and sports innovation,
+                    had humble beginnings in the small town of Brighton, England, in 1985. Founded by former professional
+                    footballer Peter E. Pearson, the foundation started as a local initiative aimed at providing young
+                    athletes with access to proper training and facilities.
+    
+                    Peter Pearson, affectionately known as “Coach Pete,” envisioned a world where every child, regardless of
+                    socioeconomic background, could pursue their dreams in sports. With a modest initial funding from local
+                    businesses and personal savings, Pearson opened the first PEP Training Center in an abandoned warehouse,
+                    transforming it into a vibrant hub for young athletes.
+    
+                    By the early 1990s, PEP Sports had gained national recognition for its holistic approach to athlete
+                    development, combining physical training with mental conditioning and academic support. This unique
+                    methodology attracted top talent and soon led to partnerships with renowned sports organizations.
+    
+                    In 2001, PEP Sports Foundation expanded internationally, establishing training centers in Australia,
+                    South Africa, and the United States. Its innovative programs, such as the PEP Elite Academy and the PEP
+                    Community Outreach Initiative, have since impacted thousands of athletes worldwide.
+    
+                    Today, the PEP Sports Foundation continues to thrive, upholding Pearson’s legacy by fostering talent,
+                    promoting sportsmanship, and building future champions across the globe.
+    
+                </p>
+            </article>
+        </section>
+        <section class="form-sec">
+            <h2>Membership Registration Form</h2>
+            <form id="register-form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Child Information</legend>
+                    <label>First Name:*<input type="text" name="firstname" title="Enter child's first name"
+                            autocomplete="given-name" required></label>
+                    <label>Last Name:*<input type="text" name="lastname" title="Enter child's last name"
+                            autocomplete="family-name" required></label>
+                    <label>Date of Birth:*<input type="date" name="birthdate" required></label>
+                    <label for="sports">Choose a Sports
+                        <select id="sports" name="sports">
+                            <option>Select a sports</option>
+                            <option value="football">Football</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="Volleyball">Volleyball</option>
+                            <option value="Swimming">Swimming</option>
+                            <option value="handball">Handball</option>
+                        </select>
+                    </label>
+                    <label for="countries"> Select Your Country
+                        <select name="country" id="countries">
+                            <option value="">Select Your Country</option>
+                        </select>
+                    </label>
+    
+                </fieldset>
+                <fieldset>
+                    <legend>Guardian Information</legend>
+                    <label>Full Name:*<input type="text" name="parent-fullname" title="Enter parent's full name"
+                            autocomplete="name" required></label>
+                    <label>Phone:*<input type="tel" name="phone" autocomplete="tel" required></label>
+                    <label>Email<span>(Optional)</span>: <input type="email" name="email" autocomplete="email"
+                            placeholder="example@gmail.com"></label>
+                </fieldset>
+    
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </div>
+    </main>
+
+    <footer>
+        <section class="footer address">
+            <h3>Pep Sports Foundation</h3>
+            <address>
+                Asamankese, Suhum Road<br />
+                Sukuntu, Asamankese<br />
+                info@pepsports.org<br />
+                (233) 555 595 354<br />
+            </address>
+        </section>
+        <div class="media-links">
+            <h3>Connect With us</h3>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="/images/fb-logo.svg" alt="facebook logo" width="40" height="40" />
+            </a>
+            <a href="https://www.linkedin.com/in/joseph-budu-8894a1192/" target="_blank">
+                <img src="/images/linkedin.svg" alt="LinkedIn Logo" width="40" height="40" />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=233555595354" target="_blank">
+                <img src="/images/whatsapp-logo.svg" alt="Whatsapp Logo" width="40" height="40" />
+            </a>
+        </div>
+        <div class="author-info">
+            <p>
+                WDD330 - End of Course Project<br />
+                Joseph Budu Larbi<br />
+                © Pep Sports Foundation<br />
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

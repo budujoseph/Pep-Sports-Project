@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: "./index.html",
         artist_page: "./athletes/index.html",
+        contact_page: "./contact/index.html",
       },
     },
   },

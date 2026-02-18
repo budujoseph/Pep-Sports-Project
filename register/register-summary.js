@@ -1,6 +1,6 @@
 // Registeration Summary
 
-function registerationSummary() {
+function registrationSummary() {
   const registerFormInfo = document.getElementById("form-info");
 
   if (!registerFormInfo) return;
@@ -37,4 +37,4 @@ function registerationSummary() {
   registerFormInfo.appendChild(printBtn);
 }
 
-registerationSummary();
+registrationSummary();

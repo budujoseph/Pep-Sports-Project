@@ -664,6 +664,7 @@ p {
 .form-sec h2 {
   text-align: center;
   font-family: var(--heading-font);
+  padding: 10px;
 }
 
 .form-sec form label,
@@ -708,12 +709,17 @@ p {
   cursor: pointer;
   font-family: var(--heading-font);
   background-color: black;
+
+  &:hover {
+    background-color: rgb(54, 14, 54);
+  }
 }
 
 #register-form legend {
   padding: 0.5rem;
   font-size: 1.2rem;
   color: darkmagenta;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 44rem) {

@@ -33,3 +33,10 @@ export async function getCountryData() {
 
     fetchCountries();
 }
+
+// registration form reset
+
+window.addEventListener("load", () => {
+    const form = document.getElementById("register-form");
+    if (form) form.reset(); // clears all inputs when page loads
+});

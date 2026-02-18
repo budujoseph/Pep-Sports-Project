@@ -108,8 +108,12 @@
           </article>
         </section>
         <section class="form-sec">
-          <h2>Membership Registration Form</h2>
-          <form id="register-form">
+          <h2>Trials Registration Form</h2>
+          <form
+            id="register-form"
+            method="get"
+            action="/register/register-summary.html"
+          >
             <fieldset>
               <legend>Child Information</legend>
               <label
@@ -133,8 +137,8 @@
               /></label>
               <label for="sports"
                 >Choose a Sports
-                <select id="sports" name="sports">
-                  <option>Select a sports</option>
+                <select id="sports" name="sports" required>
+                  <option value="">Select a sports</option>
                   <option value="football">Football</option>
                   <option value="basketball">Basketball</option>
                   <option value="Volleyball">Volleyball</option>

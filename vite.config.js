@@ -8,6 +8,7 @@ export default defineConfig({
         main: "./index.html",
         artist_page: "./athletes/index.html",
         contact_page: "./contact/index.html",
+        register_summary: "./register/register-summary.html",
       },
     },
   },

@@ -267,7 +267,7 @@ dialog::backdrop {
   cursor: pointer;
   font-weight: 700;
 
-  &:hover{
+  &:hover {
     background-color: #b5b1b1;
   }
 }

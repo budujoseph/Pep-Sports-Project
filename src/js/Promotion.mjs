@@ -7,8 +7,15 @@ export class NewsLetter {
     }
 
     init() { 
-        this.subForm.addEventListener("submit", this.handleSubmit.bind(this));
-        this.subMsg.style.display = "none";
+        const subscribers = getLocalStorageItem("subscribers") || [];
+        if (subscribers.length > 0) {
+            this.subForm.style.display = "none";
+            
+        } else {
+            this.subForm.addEventListener("submit", this.handleSubmit.bind(this));
+            this.subMsg.style.display = "none";
+        }
+           
     }
 
     handleSubmit(event) {

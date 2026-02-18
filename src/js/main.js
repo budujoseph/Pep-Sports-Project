@@ -5,8 +5,10 @@ import {
   initRegisterForm,
 } from "../js/Promotion.mjs";
 
-const newsletter = new NewsLetter();
-newsletter.init();
+document.addEventListener("DOMContentLoaded", () => {
+  const newsletter = new NewsLetter();
+  newsletter.init();
+});
 
 initLoginForm();
 initRegisterForm();

@@ -168,6 +168,11 @@ nav ul li a:hover {
   color: white;
   border-radius: 5px;
   margin-bottom: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(58, 57, 57);
+  }
 }
 
 .events-container {
@@ -261,6 +266,10 @@ dialog::backdrop {
   height: 2.5rem;
   cursor: pointer;
   font-weight: 700;
+
+  &:hover{
+    background-color: #b5b1b1;
+  }
 }
 
 footer {
@@ -581,6 +590,14 @@ p {
   box-shadow: 0 8px 5px black;
   width: 100%;
   max-width: 400px;
+}
+
+.athlete-card:hover {
+  transform: scale(1.1);
+}
+
+.athlete-card {
+  transition: transform 0.5s ease-out;
 }
 
 #athletes-container {

@@ -737,9 +737,7 @@ p {
     font-size: 1.2rem;
   }
 
-  #trygram {
-    display: none;
-  }
+  #trygram {display: none;}
 
   ul.menu-navs,
   ul.menu-navs.show {
@@ -749,9 +747,7 @@ p {
     gap: 4rem;
   }
 
-  nav {
-    grid-template-rows: 1fr;
-  }
+  nav {grid-template-rows: 1fr;}
 
   .hero-items {
     width: 100%;
@@ -772,12 +768,6 @@ p {
     gap: 1rem;
   }
 
-  .events-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    gap: 1rem;
-  }
 
   footer {
     display: flex;
@@ -806,13 +796,9 @@ p {
     gap: 3rem;
   }
 
-  .sportbtn button {
-    width: 120px;
-  }
+  .sportbtn button {width: 120px;}
 
-  .cta-sec {
-    max-width: 95%;
-  }
+  .cta-sec {max-width: 95%;}
 
   .contact-form {
     display: flex;
@@ -823,19 +809,15 @@ p {
   .cont-invite {
     margin: 1rem;
     margin-left: 4rem;
+    max-width: 700px;
+    width: 100%;
   }
 
-  .form-sec {
-    margin-right: 5rem;
-  }
+  .form-sec {margin-right: 5rem;}
 
   #register-form button[type="submit"] {
     max-width: 600px;
     width: 100%;
   }
 
-  .cont-invite {
-    max-width: 700px;
-    width: 100%;
-  }
 }

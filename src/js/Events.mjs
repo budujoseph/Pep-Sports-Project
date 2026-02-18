@@ -9,11 +9,11 @@ export function initNavigation() {
         hamburger.classList.toggle("show");
     });
 
-    const activePage = window.location.pathname;
+    const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll("nav a");
 
     navLinks.forEach(link => {
-        if (link.href.includes(`${activePage}`)) {
+        if (new URL(link.href).pathname === currentPath) {
             // console.log("Active page:", activePage);
             link.classList.add("active");
         }

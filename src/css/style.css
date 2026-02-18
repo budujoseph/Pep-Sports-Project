@@ -722,6 +722,10 @@ p {
   font-weight: 700;
 }
 
+/* .register-summary {
+  text-align: left;
+} */
+
 @media screen and (min-width: 44rem) {
   nav {
     width: 100%;
